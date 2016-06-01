@@ -8,35 +8,42 @@ public class WashDishDay {
         this.day = day;
     }
 
-    public void WhoDoesIt() {
+    public void whoDoesIt() {
         switch (day) {
             case MONDAY:
-                System.out.println("Yukie is doing the dishes");
+                System.out.println("Ashfaq is doing the dishes");
                 break;
             case TUESDAY:
                 System.out.println("Yukie is doing the dishes");
                 break;
             case WEDNESDAY:
-                System.out.println("Yukie is doing the dishes");
+                System.out.println("Stefan is doing the dishes");
                 break;
             case THURSDAY:
-                System.out.println("Yukie is doing the dishes");
+                System.out.println("Jonas is doing the dishes");
                 break;
             case FRIDAY:
-                System.out.println("Yukie is doing the dishes");
+                System.out.println("Johan is doing the dishes");
                 break;
             case SATURDAY:
-                System.out.println("Yukie is doing the dishes");
+                System.out.println("Mikael is doing the dishes");
                 break;
             case SUNDAY:
-                System.out.println("Yukie is doing the dishes");
+                System.out.println("Dan is doing the dishes");
                 break;
             default:
-                System.out.println("Yukie is doing the dishes");
+                System.out.println("Andreas is doing the dishes");
         }
     }
 
     public static void main(String[] args) {
-        WashDishDay dayOfWeek = new WashDishDay(args[0].toUpperCase());
+        try {
+            WashDishDay dayOfWeek = new WashDishDay(Weekdays.valueOf(args[0].toUpperCase()));
+            dayOfWeek.whoDoesIt();
+        } catch (IllegalArgumentException|ArrayIndexOutOfBoundsException e) {
+            System.out.println("Andreas is doing the dishes");
+
+
+        }
     }
 }

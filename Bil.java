@@ -12,9 +12,19 @@ public class Bil {
         this.doorNum = "";
     }
 
-    public Bil(String make, String model, String doorNum) {
+    public Bil(String make) {
+        this();
         this.make = make;
+    }
+
+    public Bil(String make, String model) {
+        this(make);
         this.model = model;
+    }
+
+
+    public Bil(String make, String model, String doorNum) {
+        this(make, model);
         this.doorNum = doorNum;
 
     }
@@ -24,11 +34,14 @@ public class Bil {
         return make + " " + model + ", " + doorNum;
     }
     public static void main(String[] args) {
-        String make = "Mazda";
-        String model = "RX-8";
-        String doorNum = "2-dörrar";
+//        String make = "Mazda";
+//        String model = "RX-8";
+//        String doorNum = "2-dörrar";
 
-        System.out.println(make + " " + model + ", " + doorNum);
+        Bil mazda = new Bil("Mazda", "RX-8", "2-dörrar");
+        System.out.println(mazda);
+
+
 
     }
 }
