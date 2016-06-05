@@ -1,5 +1,9 @@
+package name;
+
 /**
- * Created by Elev1 on 2016-05-27.
+ * @author László Hágó
+ * @version 1.0
+ * @since 2016-05-27
  */
 public class Name {
     private String firstName;
@@ -12,6 +16,7 @@ public class Name {
         this.name = "";
     }
     public Name(String firstName,String lastName) {
+        this();
         this.firstName = firstName;
         this.lastName = lastName;
         this.name = this.firstName + " " + this.lastName;
@@ -23,6 +28,7 @@ public class Name {
     public String reversed(){
         return lastName + " " + firstName;
     }
+
     @Override
     public String toString() {
         return firstName + " " + lastName;
@@ -35,11 +41,11 @@ public class Name {
 
         Name name3 = new Name("John","Jonsson");
 
-        System.out.println("Name 1: " + name1);
-        System.out.println("Name 2: " + name2);
-        System.out.println("Name 3: " + name3);
-        System.out.println("Name 3 reversed: " + name3.reversed());
-        System.out.println("Name 3 lastname uppercase: " + name3.upperLastName());
+        System.out.println("name.Name 1: " + name1);
+        System.out.println("name.Name 2: " + name2);
+        System.out.println("name.Name 3: " + name3.name);
+        System.out.println("name.Name 3 reversed: " + name3.reversed());
+        System.out.println("name.Name 3 last name uppercase: " + name3.upperLastName());
 
     }
 

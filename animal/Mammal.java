@@ -1,9 +1,14 @@
+package animal;
+
 /**
  * Created by Elev1 on 2016-05-31.
  */
-public class Mammal extends Animal {
+public class Mammal implements Animal {
 //    protected String species;
 //    protected String sound;
+    protected String species;
+    protected String sound;
+    protected String food;
 
     public Mammal() {
         this.species = "";
@@ -15,8 +20,18 @@ public class Mammal extends Animal {
         this.sound = sound;
     }
 
+    public String eatFood() {
+        return food;
+    }
+
+    public String makeSound() {
+        return sound;
+    }
+
     @Override
     public String toString() {
         return species;
     }
+
+
 }
