@@ -1,19 +1,21 @@
-package animal;
+package se.lexicon.laszlo.animal;
 
 /**
  * Created by Elev1 on 2016-05-31.
  */
-public class Reptile implements Animal {
+public class Mammal implements Animal {
+//    protected String species;
+//    protected String sound;
     protected String species;
     protected String sound;
     protected String food;
 
-    public Reptile() {
+    public Mammal() {
         this.species = "";
         this.sound = "";
     }
 
-    public Reptile(String species, String sound) {
+    public Mammal(String species, String sound) {
         this.species = species;
         this.sound = sound;
     }
@@ -30,4 +32,6 @@ public class Reptile implements Animal {
     public String toString() {
         return species;
     }
+
+
 }

@@ -1,4 +1,4 @@
-package animal;
+package se.lexicon.laszlo.animal;
 
 /**
  * Created by Elev1 on 2016-05-31.
@@ -10,7 +10,7 @@ public class Tiger extends Mammal {
         food = "little children";
     }
 
-//    public animal.Tiger(String species, String sound) {
+//    public se.lexicon.laszlo.animal.Tiger(String species, String sound) {
 //        super(species, sound);
 //    }
 }

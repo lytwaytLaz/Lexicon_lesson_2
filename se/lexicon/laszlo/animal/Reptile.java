@@ -1,22 +1,21 @@
-package animal;
+package se.lexicon.laszlo.animal;
 
 /**
  * Created by Elev1 on 2016-05-31.
  */
-public class Bird implements Animal {
+public class Reptile implements Animal {
     protected String species;
     protected String sound;
     protected String food;
 
-    public Bird() {
+    public Reptile() {
         this.species = "";
         this.sound = "";
-        this.food = "";
     }
-    public Bird(String species, String sound, String food, boolean domestic) {
+
+    public Reptile(String species, String sound) {
         this.species = species;
         this.sound = sound;
-        this.food = food;
     }
 
     public String eatFood() {

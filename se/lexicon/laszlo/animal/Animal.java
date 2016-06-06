@@ -1,4 +1,4 @@
-package animal;
+package se.lexicon.laszlo.animal;
 
 /**
  * Created by Elev1 on 2016-05-30.

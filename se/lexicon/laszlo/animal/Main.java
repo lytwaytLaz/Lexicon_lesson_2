@@ -1,11 +1,13 @@
-package animal;
+package se.lexicon.laszlo.animal;
+
+import se.lexicon.laszlo.animal.*;
 
 /**
  * Created by Elev1 on 2016-05-31.
  */
 public class Main {
     public static void main(String[] args) {
-        //animal.Tiger tiger2 = new animal.Tiger("cat", "miaow");
+        //se.lexicon.laszlo.animal.Tiger tiger2 = new se.lexicon.laszlo.animal.Tiger("cat", "miaow");
 
         Tiger tiger = new Tiger();
         Donkey donkey = new Donkey();

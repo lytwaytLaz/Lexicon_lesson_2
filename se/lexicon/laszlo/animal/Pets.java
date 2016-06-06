@@ -1,4 +1,4 @@
-package animal;
+package se.lexicon.laszlo.animal;
 
 /**
  * @author László Hágó
