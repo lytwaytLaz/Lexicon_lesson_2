@@ -3,7 +3,7 @@ package se.lexicon.laszlo.animal;
 /**
  * Created by Elev1 on 2016-05-31.
  */
-public class Duck extends Bird implements Pets {
+public class Duck extends Bird implements Domestic {
     public Duck() {
         species = "duck";
         sound = "quackquack";

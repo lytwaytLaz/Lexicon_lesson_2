@@ -1,7 +1,5 @@
 package se.lexicon.laszlo.animal;
 
-import se.lexicon.laszlo.animal.*;
-
 /**
  * Created by Elev1 on 2016-05-31.
  */
@@ -22,15 +20,12 @@ public class Main {
         animals[3] = duck;
         animals[4] = frog;
 
-        System.out.println(tiger.getClass());
-        System.out.println(duck.getClass());
 
         for(int i = 0; i < animals.length; i++) {
-//            System.out.println("The " + animals[i] + " says " + animals[i].makeSound());
-            if(animals[i] instanceof Pets) {
-                Pets pet = (Pets) animals[i];
-//                System.out.println("The " + animals[i] + " is fed " + animals[i].feedAnimal() + "\n");
-                System.out.println("The " + animals[i] + " is fed " + pet.feedAnimal() + "\n");
+            System.out.println("The " + animals[i] + " says " + animals[i].makeSound());
+            if(animals[i] instanceof Domestic) {
+                // animals[i] must be casted to Domestic ((Domestic) animals[i]) to access the feedAnimal method in Domestic interface
+                System.out.println("The " + animals[i] + " is fed " + ((Domestic) animals[i]).feedAnimal() + "\n");
             }
         }
     }
