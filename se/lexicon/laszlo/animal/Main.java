@@ -22,7 +22,7 @@ public class Main {
 
 
         for(int i = 0; i < animals.length; i++) {
-            System.out.println("The " + animals[i] + " says " + animals[i].makeSound());
+//            System.out.println("The " + animals[i] + " says " + animals[i].makeSound());
             if(animals[i] instanceof Domestic) {
                 // animals[i] must be casted to Domestic ((Domestic) animals[i]) to access the feedAnimal method in Domestic interface
                 System.out.println("The " + animals[i] + " is fed " + ((Domestic) animals[i]).feedAnimal() + "\n");
